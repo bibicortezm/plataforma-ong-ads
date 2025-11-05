@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Cadastro — Crianças do Amanhã</title>
+  <meta name="description" content="Formulário de cadastro de voluntários e doadores - Crianças do Amanhã.">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header class="site-header" role="banner">
+    <div class="container header-inner">
+      <a class="brand" href="index.html">
+        <img src="imagens/voluntariado.jpg" alt="Logo Crianças do Amanhã" class="logo">
+        <h1>Crianças do Amanhã</h1>
+      </a>
+      <nav class="nav" aria-label="Menu principal">
+        <a href="index.html">Início</a>
+        <a href="projetos.html">Projetos</a>
+        <a href="cadastro.html" aria-current="page">Cadastro</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container" role="main">
+    <section class="card" aria-labelledby="cad-title">
+      <h2 id="cad-title">Cadastro de Voluntário / Doador</h2>
+      <p>Preencha os dados abaixo. Campos com <abbr title="obrigatório">*</abbr> são obrigatórios.</p>
+
+      <form action="#" method="post" novalidate>
+        <fieldset>
+          <legend>Informações pessoais</legend>
+          <div class="form-grid">
+            <label>Nome completo *<input class="input" name="nome" type="text" placeholder="Nome completo" required minlength="3"></label>
+            <label>E-mail *<input class="input" name="email" type="email" placeholder="seu@exemplo.com" required></label>
+            <label>CPF *<input class="input" name="cpf" type="text" inputmode="numeric" data-mask="cpf" placeholder="000.000.000-00" required pattern="\d{3}\.\d{3}\.\d{3}-\d{2}"></label>
+            <label>Telefone *<input class="input" name="telefone" type="tel" inputmode="tel" data-mask="phone" placeholder="(00) 90000-0000" required></label>
+            <label>Data de nascimento *<input class="input" name="nascimento" type="date" required aria-label="Data de nascimento"></label>
+          </div>
+        </fieldset>
+
+        <fieldset>
+          <legend>Endereço</legend>
+          <div class="form-grid">
+            <label>Endereço *<input class="input" name="endereco" type="text" required placeholder="Rua, número, complemento"></label>
+            <label>CEP *<input class="input" name="cep" type="text" inputmode="numeric" data-mask="cep" placeholder="00000-000" required pattern="\d{5}-\d{3}"></label>
+            <label>Cidade *<input class="input" name="cidade" type="text" required></label>
+            <label>Estado *<select name="estado" required><option value="">Selecione</option><option value="GO">GO</option><option value="SP">SP</option><option value="RJ">RJ</option></select></label>
+          </div>
+        </fieldset>
+
+        <fieldset>
+          <legend>Interesses</legend>
+          <div class="form-grid" style="grid-template-columns:1fr;">
+            <label><input type="checkbox" name="interesse" value="voluntariado"> Quero ser voluntário</label>
+            <label><input type="checkbox" name="interesse" value="doacao"> Quero doar</label>
+            <label><input type="checkbox" name="interesse" value="newsletter"> Receber newsletter</label>
+          </div>
+        </fieldset>
+
+        <button type="submit" class="btn-primary">Enviar cadastro</button>
+      </form>
+    </section>
+  </main>
+
+  <footer class="site-footer" role="contentinfo">
+    <div class="container">
+      <p>Obrigado por apoiar nossa causa.</p>
+      <p><a href="index.html">Início</a> · <a href="projetos.html">Projetos</a></p>
+    </div>
+  </footer>
+
+  <script src="js/script.js" defer></script>
+</body>
+</html>

@@ -1,0 +1,41 @@
+document.addEventListener('DOMContentLoaded', () => {
+  const onlyDigits = v => v.replace(/\D/g, '');
+
+  const mask = (el, fn) => {
+    el.addEventListener('input', (e) => { e.target.value = fn(onlyDigits(e.target.value)); });
+  };
+
+  const cpf = document.querySelector('[data-mask="cpf"]');
+  if(cpf) mask(cpf, (v) => {
+    v = v.slice(0,11);
+    if(v.length > 9) return v.replace(/(\d{3})(\d{3})(\d{3})(\d{1,2})/, '$1.$2.$3-$4');
+    if(v.length > 6) return v.replace(/(\d{3})(\d{3})(\d{1,3})/, '$1.$2.$3');
+    if(v.length > 3) return v.replace(/(\d{3})(\d{1,3})/, '$1.$2');
+    return v;
+  });
+
+  const phone = document.querySelector('[data-mask="phone"]');
+  if(phone) mask(phone, (v) => {
+    v = v.slice(0,11);
+    if(v.length > 6) return v.replace(/(\d{2})(\d{5})(\d{1,4})/, '($1) $2-$3');
+    if(v.length > 2) return v.replace(/(\d{2})(\d{1,5})/, '($1) $2');
+    return v;
+  });
+
+  const cep = document.querySelector('[data-mask="cep"]');
+  if(cep) mask(cep, (v) => {
+    v = v.slice(0,8);
+    if(v.length > 5) return v.replace(/(\d{5})(\d{1,3})/, '$1-$2');
+    return v;
+  });
+
+  document.querySelectorAll('form').forEach(form => {
+    form.addEventListener('submit', (e) => {
+      if(!form.checkValidity()){
+        e.preventDefault();
+        const first = form.querySelector(':invalid');
+        if(first){ first.focus(); first.reportValidity(); }
+      }
+    });
+  });
+});

@@ -1,0 +1,31 @@
+<link rel="stylesheet" href="css/style.css">
+:root {
+  /* Cores */
+  --color-primary: #0052cc;
+  --color-secondary: #ff9800;
+  --color-success: #4caf50;
+  --color-danger: #e53935;
+  --color-warning: #ffc107;
+  --color-info: #2196f3;
+  --color-background: #f4f6f8;
+  --color-text: #333333;
+  /* Tipografia */
+  --font-size-xs: 12px;
+  --font-size-sm: 14px;
+  --font-size-md: 16px;
+  --font-size-lg: 20px;
+  --font-size-xl: 24px;
+  /* Espaçamento */
+  --spacing-1: 8px;
+  --spacing-2: 16px;
+  --spacing-3: 24px;
+  --spacing-4: 32px;
+  --spacing-5: 48px;
+  --spacing-6: 64px;
+}
+body {
+  background-color: var(--color-background);
+  color: var(--color-text);
+  font-size: var(--font-size-md);
+}
+
