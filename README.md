@@ -76,8 +76,6 @@ perf: performance
 test: testes
 chore: tarefas gerais
 
-text
-
 ## 🔄 GitFlow
 
 Estratégia de branching utilizada:
