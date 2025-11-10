@@ -5,7 +5,7 @@ Sistema com cadastro para voluntários/doadores, listagem de projetos, design mo
 
 ---
 
-<img src="./imagens/banner-hero.png" alt="Banner Crianças do Amanhã" style="width:100%;max-width:1200px;">
+<img src="./imagens/Imagem-do-WhatsApp-de-2025-11-10-a-s-19.18.11_f0f8aa1d.jpg" alt="Banner Crianças do Amanhã" style="width:100%;max-width:1200px;">
 
 ## Badges
 
