@@ -20,3 +20,11 @@ document.getElementById("cadastroBtn").onclick = () => renderPage("cadastro");
 
 // Carrega a home no início
 renderPage("home");
+<!-- No final do <body> -->
+<script type="module">
+  import { initSPA } from './js/spa.js';
+  
+  // Inicializa a SPA quando a página carrega
+  initSPA();
+</script>
+
