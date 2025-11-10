@@ -18,21 +18,20 @@ Sistema com cadastro para voluntários/doadores, listagem de projetos, design mo
 ## Demonstração Visual
 
 ### Home e Navegação
-![Home](./imagens/home.png)
+![Home](./imagens/Captura%20de%20tela%202025-11-10%20180326.png)
 *Menu principal, links acessíveis, menu hamburguer para mobile.*
 
 ### Cadastro Voluntário
-![Cadastro](./imagens/cadastro.png)
+![Cadastro](./imagens/Captura%20de%20tela%202025-11-10%20181507.png)
 *Formulário, campos obrigatórios, validação, feedback de envio.*
 
 ### Listagem de Projetos
-![Projetos](./imagens/lista-projetos.png)
+![Projetos](./imagens/Captura%20de%20tela%202025-11-10%20182106.png)
 *Exemplo de card de projeto, categoria, acessibilidade de contraste.*
 
 ### Validação de Acessibilidade
-![Lighthouse](./imagens/lighthouse.png)
+![Lighthouse](./imagens/Captura%20de%20tela%202025-11-10%20183844.png)
 *Auditoria: Score máximo em Accessibility, Best Practices e SEO.*
-
 ---
 
 ## Funcionalidades
