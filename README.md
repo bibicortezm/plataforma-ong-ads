@@ -1,4 +1,4 @@
-# Plataforma ONG ADS
+# Plataforma ONG CDM
 
 Projeto web responsivo para ONGs, desenvolvido no curso de ADS.  
 Sistema com cadastro para voluntários/doadores, listagem de projetos, design moderno e acessibilidade WCAG 2.1 AA.
