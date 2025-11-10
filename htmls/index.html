@@ -4,16 +4,20 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Meu Projeto ADS</title>
-  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="../css/style.css">
+  <!-- Favicon opcional -->
+  <link rel="icon" type="image/png" href="../imagens/favicon.png">
 </head>
 <body>
   <header>
-    <nav class="navbar">
+    <img src="../imagens/banner-hero.png" alt="Banner Crianças do Amanhã" style="width:100%;max-width:1200px;">
+    <nav class="navbar" aria-label="Menu principal">
       <!-- Menu hamburguer para mobile -->
       <button class="hamburger" aria-label="Abrir menu"></button>
       <ul class="menu">
         <li><a href="index.html">Home</a></li>
-        <li><a href="sobre.html">Sobre</a>
+        <li>
+          <a href="sobre.html">Sobre</a>
           <ul class="submenu">
             <li><a href="#team">Equipe</a></li>
             <li><a href="#missao">Missão</a></li>
@@ -23,11 +27,12 @@
       </ul>
     </nav>
   </header>
+
   <main class="container">
     <section class="grid">
       <!-- Exemplo de cards -->
       <div class="card">
-        <img src="images/projeto-banner.jpg" alt="Projeto 1">
+        <img src="../imagens/projeto-banner.jpg" alt="Projeto 1">
         <h2>Projeto 1</h2>
         <span class="badge categoria1">Web</span>
         <p>Descrição resumida do projeto...</p>
@@ -42,10 +47,12 @@
       <button class="btn" type="submit">Enviar</button>
     </form>
     <!-- Feedback exemplo -->
-    <div class="alert success">Formulário enviado com sucesso!</div>
+    <div class="alert success" role="status">Formulário enviado com sucesso!</div>
   </main>
+
   <footer>
     <p>&copy; 2025 Meu Projeto ADS</p>
   </footer>
 </body>
 </html>
+
