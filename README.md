@@ -111,6 +111,3 @@ MIT
 ## Suporte
 
 Sugestões ou dúvidas: abra uma [Issue](https://github.com/bibicortezm/plataforma-ong-ads/issues) ou envie por e-mail.
-
-
-- Mensagens de feedback (alertas, erros
