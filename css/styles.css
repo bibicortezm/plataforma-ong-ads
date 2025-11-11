@@ -1,56 +1,191 @@
-<!DOCTYPE html>
-<html lang="pt-br">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Crianças do Amanhã</title>
-  <link rel="stylesheet" href="../css/style.css">
-  <link rel="icon" type="image/png" href="../imagens/favicon.png">
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
-</head>
-<body>
-  <header class="header">
-    <!-- Banner hero principal -->
-    <img src="../imagens/banner-hero.jpg" alt="Banner Crianças do Amanhã" class="banner-img">
-    <nav class="navbar">
-      <div class="logo"><!-- Logo pode ser SVG ou simplesmente o nome --><img src="../imagens/ong.svg" alt="Logo ONG" class="logo-svg"> Crianças do Amanhã</div>
-      <ul class="menu">
-        <li><a href="index.html">Início</a></li>
-        <li><a href="projetos.html">Projetos</a></li>
-        <li><a href="cadastro.html">Cadastro</a></li>
-      </ul>
-    </nav>
-  </header>
-  <main class="main-content">
-    <h1 class="titulo-principal">Projetos Sociais</h1>
-    <section class="grid">
-      <!-- Exemplo de card de projeto -->
-      <div class="card">
-        <img src="../imagens/banner-hero.jpg" alt="Projeto Educação Viva" class="card-img">
-        <h2>Educação Viva</h2>
-        <span class="badge categoria1">Educação</span>
-        <p>Oficinas e cursos para crianças em situação de vulnerabilidade.</p>
-        <button class="btn">Ver mais</button>
-      </div>
-      <div class="card">
-        <img src="../imagens/volu.svg" alt="Voluntariado" class="card-img">
-        <h2>Voluntariado</h2>
-        <span class="badge categoria2">Apoio</span>
-        <p>Faça parte do nosso time. Seja voluntário e ajude a transformar vidas!</p>
-        <button class="btn">Inscreva-se</button>
-      </div>
-    </section>
+:root {
+  --color-primary: #2563eb;
+  --color-secondary: #f59e42;
+  --color-success: #22c55e;
+  --color-danger: #ef4444;
+  --color-warning: #fde047;
+  --color-info: #3b82f6;
+  --color-background: linear-gradient(135deg, #f4f9fc 0%, #dbeafe 100%);
+  --color-surface: #fff;
+  --color-text: #1f2937;
+  --color-text-muted: #6b7280;
+}
 
-    <form class="formulario">
-      <h3>Contato Rápido</h3>
-      <label for="nome">Nome:</label>
-      <input id="nome" name="nome" type="text" required placeholder="Digite seu nome">
-      <button class="btn" type="submit">Enviar</button>
-    </form>
-    <div class="alert success" role="status">Formulário enviado com sucesso!</div>
-  </main>
-  <footer>
-    <p>&copy; 2025 Crianças do Amanhã</p>
-  </footer>
-</body>
-</html>
+body {
+  background: var(--color-background);
+  color: var(--color-text);
+  font-family: 'Inter', 'Segoe UI', Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.header {
+  text-align: center;
+  padding: 18px 0 0 0;
+}
+
+.logo-svg,
+.logo-img {
+  width: 72px;
+  vertical-align: middle;
+  border-radius: 50%;
+  margin-right: 12px;
+  box-shadow: 0 2px 8px rgba(37,99,235,0.09);
+}
+
+.banner-img {
+  width: 100%;
+  max-width: 900px;
+  border-radius: 20px;
+  box-shadow: 0 4px 16px rgba(37,99,235,0.11);
+  margin: 0 auto 18px auto;
+  display: block;
+}
+
+.navbar {
+  background: var(--color-surface);
+  box-shadow: 0 1px 6px rgba(37,99,235,0.04);
+  padding: 0 0 22px 0;
+  margin-bottom: 28px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.logo {
+  font-size: 1.35em;
+  color: var(--color-primary);
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  margin-top: 12px;
+  margin-bottom: 6px;
+}
+
+.menu {
+  display: flex;
+  gap: 32px;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.menu li a {
+  text-decoration: none;
+  color: var(--color-primary);
+  font-weight: 600;
+  font-size: 1.09em;
+  border-radius: 8px;
+  padding: 8px 18px;
+  transition: background 0.2s, color 0.2s;
+}
+
+.menu li a:hover {
+  background: var(--color-primary);
+  color: #fff;
+}
+
+.main-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.titulo-principal {
+  font-size: 2.3em;
+  color: var(--color-primary);
+  margin: 36px 0 14px 0;
+  text-align: center;
+}
+
+.grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 32px;
+  justify-content: center;
+  margin-bottom: 32px;
+}
+
+.card {
+  background: #fff;
+  border-radius: 15px;
+  box-shadow: 0 3px 12px rgba(37,99,235,0.11);
+  width: 310px;
+  padding: 24px 18px;
+  text-align: center;
+  transition: box-shadow 0.18s, transform 0.18s;
+}
+.card:hover {
+  box-shadow: 0 8px 24px rgba(37,99,235,0.19);
+  transform: scale(1.03);
+}
+
+.card-img {
+  width: 100%;
+  max-width: 240px;
+  border-radius: 12px;
+  box-shadow: 0 1px 6px rgba(59,130,246,0.09);
+  margin-bottom: 16px;
+}
+
+.badge {
+  background: var(--color-primary);
+  color: #fff;
+  border-radius: 8px;
+  padding: 4px 12px;
+  font-size: 0.95em;
+  margin-bottom: 10px;
+  display: inline-block;
+}
+
+.formulario {
+  background: #fff;
+  border-radius: 13px;
+  box-shadow: 0 2px 11px rgba(37,99,235,0.08);
+  padding: 22px 28px;
+  max-width: 360px;
+  margin: 32px auto 20px auto;
+}
+
+input[type="text"] {
+  width: 92%;
+  padding: 10px;
+  margin: 10px 0 22px 0;
+  border-radius: 6px;
+  border: 1px solid #dbeafe;
+}
+
+.btn {
+  background: linear-gradient(90deg, var(--color-primary), var(--color-info));
+  color: #fff;
+  font-weight: 600;
+  border: none;
+  border-radius: 8px;
+  padding: 10px 30px;
+  cursor: pointer;
+  box-shadow: 0 1px 6px rgba(37,99,235,0.11);
+  transition: transform 0.2s, background 0.2s, box-shadow 0.2s;
+}
+
+.btn:hover { background: linear-gradient(90deg, var(--color-secondary), var(--color-primary)); transform: scale(1.05); }
+
+.alert.success {
+  background: var(--color-success);
+  color: #fff;
+  text-align: center;
+  padding: 10px;
+  border-radius: 6px;
+  margin: 18px auto 0 auto;
+  max-width: 320px;
+  font-weight: bold;
+}
+
+footer {
+  background: #dbeafe;
+  color: var(--color-text-muted);
+  padding: 18px 0;
+  text-align: center;
+  font-size: 0.95em;
+  margin-top: 40px;
+  border-top: 1px solid #e3f0fd;
+}
