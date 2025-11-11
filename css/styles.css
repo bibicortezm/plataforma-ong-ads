@@ -1,26 +1,93 @@
-<link rel="stylesheet" href="css/style.css">
+:root {
+  --color-primary: #2563eb;
+  --color-secondary: #f59e42;
+  --color-success: #22c55e;
+  --color-danger: #ef4444;
+  --color-warning: #fde047;
+  --color-info: #3b82f6;
+  --color-background: linear-gradient(135deg, #f4f9fc 0%, #dbeafe 100%);
+  --color-surface: #fff;
+  --color-text: #1f2937;
+  --color-text-muted: #6b7280;
+}
+
+body {
+  background: var(--color-background);
+  color: var(--color-text);
+  font-family: 'Inter', 'Segoe UI', Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+}
+
+.header {
+  text-align: center;
+  padding: 20px 0 0 0;
+}
+
 .logo-img {
-  width: 120px;
-  display: block;
-  margin: 16px auto 8px auto;
+  width: 110px;
   border-radius: 50%;
   box-shadow: 0 2px 8px rgba(37,99,235,0.09);
+  margin-bottom: 14px;
 }
 
 .banner-img {
   width: 100%;
   max-width: 900px;
-  display: block;
-  margin: 0 auto 24px auto;
   border-radius: 18px;
   box-shadow: 0 4px 16px rgba(37,99,235,0.07);
+  margin-bottom: 20px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.navbar {
+  background: var(--color-surface);
+  box-shadow: 0 1px 6px rgba(37,99,235,0.06);
+  padding: 0;
+  margin-bottom: 16px;
+}
+
+.menu {
+  display: flex;
+  justify-content: center;
+  gap: 32px;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.menu li a {
+  text-decoration: none;
+  color: var(--color-primary);
+  font-weight: 600;
+  font-size: 1.08em;
+  border-radius: 8px;
+  padding: 8px 16px;
+  transition: background 0.2s, color 0.2s;
+}
+
+.menu li a:hover {
+  background: var(--color-primary);
+  color: #fff;
+}
+
+.main-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  min-height: 60vh;
 }
 
 .grid {
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
   gap: 32px;
+  justify-content: center;
+  margin-bottom: 32px;
 }
 
 .card {
@@ -34,7 +101,7 @@
 
 .card-img {
   width: 100%;
-  max-width: 260px;
+  max-width: 240px;
   border-radius: 12px;
   box-shadow: 0 1px 5px rgba(59,130,246,0.09);
   margin-bottom: 18px;
@@ -48,30 +115,6 @@
   font-size: 0.9em;
   margin-bottom: 8px;
   display: inline-block;
-}
-
-.menu {
-  display: flex;
-  list-style: none;
-  gap: 32px;
-  justify-content: center;
-  padding: 0;
-  margin: 0 0 24px 0;
-}
-
-.menu li a {
-  text-decoration: none;
-  color: var(--color-primary);
-  font-weight: 600;
-  font-size: 1.08em;
-  border-radius: 8px;
-  padding: 6px 16px;
-  transition: background 0.2s, color 0.2s;
-}
-
-.menu li a:hover {
-  background: var(--color-primary);
-  color: #fff;
 }
 
 .formulario {
