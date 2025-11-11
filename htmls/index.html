@@ -7,36 +7,43 @@
   <link rel="stylesheet" href="../css/style.css">
   <!-- Favicon opcional -->
   <link rel="icon" type="image/png" href="../imagens/favicon.png">
+  <!-- Fonte moderna Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
 </head>
 <body>
   <header>
-  <img src="../imagens/banner-hero.jpg" alt="Banner Crianças do Amanhã" style="width:100%;max-width:1200px;display:block;margin:0 auto;">
-  <nav class="navbar">
-    <ul class="menu">
-      <li><a href="index.html">Home</a></li>
-      <li><a href="sobre.html">Sobre</a></li>
-      <li><a href="contato.html">Contato</a></li>
-    </ul>
-  </nav>
-</header>
-  <main class="container">
+    <img src="../imagens/banner-hero.jpg" alt="Banner Crianças do Amanhã" style="width:100%;max-width:1200px;display:block;margin:0 auto;border-radius:16px;box-shadow:0 2px 12px rgba(37,99,235,0.07);">
+    <nav class="navbar">
+      <div class="logo">Meu Projeto ADS</div>
+      <ul class="menu">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="sobre.html">Sobre</a></li>
+        <li><a href="contato.html">Contato</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="main-content">
     <section class="grid">
-      <!-- Exemplo de cards -->
+      <!-- Exemplo de card aprimorado -->
       <div class="card">
-        <img src="../imagens/projeto-banner.jpg" alt="Projeto 1">
+        <img src="../imagens/projeto-banner.jpg" alt="Projeto 1" class="card-img">
         <h2>Projeto 1</h2>
         <span class="badge categoria1">Web</span>
         <p>Descrição resumida do projeto...</p>
         <button class="btn">Ver mais</button>
       </div>
-      <!-- Mais cards aqui -->
+      <!-- Adicione outros <div class="card"> aqui, se quiser -->
     </section>
-    <!-- Exemplo de formulário -->
+    
+    <!-- Formulário melhorado -->
     <form class="formulario">
+      <h3>Contato rápido</h3>
       <label for="nome">Nome:</label>
-      <input id="nome" name="nome" type="text" required>
+      <input id="nome" name="nome" type="text" required placeholder="Digite seu nome">
       <button class="btn" type="submit">Enviar</button>
     </form>
+    
     <div class="alert success" role="status">Formulário enviado com sucesso!</div>
   </main>
 
@@ -45,4 +52,5 @@
   </footer>
 </body>
 </html>
+
 
