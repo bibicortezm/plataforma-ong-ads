@@ -1,24 +1,26 @@
 <link rel="stylesheet" href="css/style.css">
 :root {
-  /* Cores principais - mais vibrantes e modernas */
-  --color-primary: #2563eb;      /* Azul vibrante */
-  --color-secondary: #f59e42;    /* Laranja moderno */
-  --color-success: #22c55e;      /* Verde suave */
-  --color-danger: #ef4444;       /* Vermelho brilhante */
-  --color-warning: #fde047;      /* Amarelo vibrante */
-  --color-info: #3b82f6;         /* Azul claro */
-  --color-background: linear-gradient(135deg, #fafafa 0%, #e3f0fd 100%);
-  --color-surface: #ffffff;
+  /* Cores */
+  --color-primary: #2563eb;
+  --color-secondary: #f59e42;
+  --color-success: #22c55e;
+  --color-danger: #ef4444;
+  --color-warning: #fde047;
+  --color-info: #3b82f6;
+  --color-background: linear-gradient(135deg, #f4f9fc 0%, #dbeafe 100%);
+  --color-surface: #fff;
   --color-text: #1f2937;
   --color-text-muted: #6b7280;
+  --navbar-bg: #fff;
+  --footer-bg: #e3f0fd;
 
   /* Tipografia */
-  --font-family-base: 'Segoe UI', 'Roboto', Arial, sans-serif;
+  --font-family-base: 'Inter', 'Segoe UI', Arial, sans-serif;
   --font-size-xs: 12px;
   --font-size-sm: 14px;
   --font-size-md: 16px;
-  --font-size-lg: 20px;
-  --font-size-xl: 28px;
+  --font-size-lg: 22px;
+  --font-size-xl: 32px;
 
   /* Espaçamento */
   --spacing-1: 8px;
@@ -26,11 +28,9 @@
   --spacing-3: 24px;
   --spacing-4: 32px;
   --spacing-5: 48px;
-  --spacing-6: 64px;
 
-  /* Sombra */
-  --shadow-md: 0 2px 8px rgba(37, 99, 235, 0.07);
-  --border-radius: 10px;
+  --shadow-md: 0 4px 16px rgba(37, 99, 235, 0.07);
+  --border-radius: 14px;
 }
 
 body {
@@ -42,47 +42,97 @@ body {
   padding: 0;
 }
 
-h1, h2, h3 {
-  color: var(--color-primary);
-  margin-bottom: var(--spacing-2);
+.navbar {
+  background: var(--navbar-bg);
+  box-shadow: 0 1px 6px rgba(37, 99, 235, 0.03);
+  padding: var(--spacing-2) var(--spacing-4);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
-p {
-  color: var(--color-text-muted);
+.navbar .logo {
+  font-size: var(--font-size-lg);
+  color: var(--color-primary);
+  font-weight: 600;
+}
+
+.navbar ul {
+  display: flex;
+  gap: var(--spacing-3);
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar a {
+  text-decoration: none;
+  color: var(--color-text);
+  padding: var(--spacing-1) var(--spacing-2);
+  border-radius: 8px;
+  transition: background 0.2s, color 0.2s;
+}
+
+.navbar a:hover {
+  background: var(--color-primary);
+  color: #fff;
+}
+
+.main-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 80vh;
 }
 
 .container {
   background: var(--color-surface);
   box-shadow: var(--shadow-md);
   border-radius: var(--border-radius);
-  padding: var(--spacing-3);
-  margin: var(--spacing-4) auto;
-  max-width: 650px;
+  padding: var(--spacing-5) var(--spacing-4) var(--spacing-4) var(--spacing-4);
+  max-width: 460px;
+  text-align: center;
+  margin: var(--spacing-4);
+}
+
+.container h1 {
+  font-size: var(--font-size-xl);
+  color: var(--color-primary);
+  margin-bottom: var(--spacing-2);
+}
+
+.intro {
+  font-size: var(--font-size-lg);
+  color: var(--color-secondary);
+  margin-bottom: var(--spacing-3);
 }
 
 button {
-  background: var(--color-primary);
+  background: linear-gradient(90deg, var(--color-primary), var(--color-info));
   color: #fff;
-  padding: var(--spacing-1) var(--spacing-2);
+  padding: 0.75em 2em;
   border: none;
-  border-radius: var(--border-radius);
-  font-size: var(--font-size-md);
+  border-radius: 8px;
+  font-size: 1.1em;
+  font-weight: 600;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.11);
   cursor: pointer;
-  transition: background 0.2s;
+  transition: box-shadow 0.2s, transform 0.18s, background 0.18s;
+  margin-top: var(--spacing-2);
 }
 
-button:hover {
-  background: var(--color-secondary);
+button:hover, button:focus {
+  background: linear-gradient(90deg, var(--color-secondary), var(--color-primary));
+  box-shadow: 0 8px 24px rgba(0,0,0,0.17);
+  transform: translateY(-2px) scale(1.04);
 }
 
-.success {
-  color: var(--color-success);
-}
-
-.warning {
-  color: var(--color-warning);
-}
-
-.error {
-  color: var(--color-danger);
+footer {
+  background: var(--footer-bg);
+  padding: var(--spacing-2) 0;
+  text-align: center;
+  color: var(--color-text-muted);
+  font-size: var(--font-size-sm);
+  box-shadow: 0 -1px 8px rgba(59,130,246,0.04);
 }
