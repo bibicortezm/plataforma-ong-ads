@@ -1,20 +1,25 @@
 <link rel="stylesheet" href="css/style.css">
 :root {
-  /* Cores */
-  --color-primary: #0052cc;
-  --color-secondary: #ff9800;
-  --color-success: #4caf50;
-  --color-danger: #e53935;
-  --color-warning: #ffc107;
-  --color-info: #2196f3;
-  --color-background: #f4f6f8;
-  --color-text: #333333;
+  /* Cores principais - mais vibrantes e modernas */
+  --color-primary: #2563eb;      /* Azul vibrante */
+  --color-secondary: #f59e42;    /* Laranja moderno */
+  --color-success: #22c55e;      /* Verde suave */
+  --color-danger: #ef4444;       /* Vermelho brilhante */
+  --color-warning: #fde047;      /* Amarelo vibrante */
+  --color-info: #3b82f6;         /* Azul claro */
+  --color-background: linear-gradient(135deg, #fafafa 0%, #e3f0fd 100%);
+  --color-surface: #ffffff;
+  --color-text: #1f2937;
+  --color-text-muted: #6b7280;
+
   /* Tipografia */
+  --font-family-base: 'Segoe UI', 'Roboto', Arial, sans-serif;
   --font-size-xs: 12px;
   --font-size-sm: 14px;
   --font-size-md: 16px;
   --font-size-lg: 20px;
-  --font-size-xl: 24px;
+  --font-size-xl: 28px;
+
   /* Espaçamento */
   --spacing-1: 8px;
   --spacing-2: 16px;
@@ -22,10 +27,62 @@
   --spacing-4: 32px;
   --spacing-5: 48px;
   --spacing-6: 64px;
-}
-body {
-  background-color: var(--color-background);
-  color: var(--color-text);
-  font-size: var(--font-size-md);
+
+  /* Sombra */
+  --shadow-md: 0 2px 8px rgba(37, 99, 235, 0.07);
+  --border-radius: 10px;
 }
 
+body {
+  background: var(--color-background);
+  color: var(--color-text);
+  font-family: var(--font-family-base);
+  font-size: var(--font-size-md);
+  margin: 0;
+  padding: 0;
+}
+
+h1, h2, h3 {
+  color: var(--color-primary);
+  margin-bottom: var(--spacing-2);
+}
+
+p {
+  color: var(--color-text-muted);
+}
+
+.container {
+  background: var(--color-surface);
+  box-shadow: var(--shadow-md);
+  border-radius: var(--border-radius);
+  padding: var(--spacing-3);
+  margin: var(--spacing-4) auto;
+  max-width: 650px;
+}
+
+button {
+  background: var(--color-primary);
+  color: #fff;
+  padding: var(--spacing-1) var(--spacing-2);
+  border: none;
+  border-radius: var(--border-radius);
+  font-size: var(--font-size-md);
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+button:hover {
+  background: var(--color-secondary);
+}
+
+.success {
+  color: var(--color-success);
+}
+
+.warning {
+  color: var(--color-warning);
+}
+
+.error {
+  color: var(--color-danger);
+}
