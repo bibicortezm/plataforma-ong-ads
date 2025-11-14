@@ -3,49 +3,65 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Meu Projeto ADS</title>
-  <link rel="stylesheet" href="css/style.css">
+  <title>Crianças do Amanhã</title>
+  <link rel="stylesheet" href="../css/styles.css">
+  <link rel="icon" type="image/png" href="../imagens/favicon.png">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
 </head>
 <body>
-  <header>
+  <header class="header">
+    <!-- Logo principal -->
+    <img src="../imagens/image.jpg" alt="Logo Crianças do Amanhã" class="logo-img">
+    <!-- Banner hero principal -->
+    <img src="../imagens/banner-hero.jpg" alt="Banner Crianças do Amanhã" class="banner-img">
     <nav class="navbar">
-      <!-- Menu hamburguer para mobile -->
-      <button class="hamburger" aria-label="Abrir menu"></button>
+      <div class="logo"><img src="../imagens/ong.svg" alt="Logo ONG" class="logo-svg"> Crianças do Amanhã</div>
       <ul class="menu">
-        <li><a href="index.html">Home</a></li>
-        <li><a href="sobre.html">Sobre</a>
-          <ul class="submenu">
-            <li><a href="#team">Equipe</a></li>
-            <li><a href="#missao">Missão</a></li>
-          </ul>
-        </li>
-        <li><a href="contato.html">Contato</a></li>
+        <li><a href="index.html">Início</a></li>
+        <li><a href="projetos.html">Projetos</a></li>
+        <li><a href="cadastro.html">Cadastro</a></li>
       </ul>
     </nav>
   </header>
-  <main class="container">
+  <main class="main-content">
+    <h1 class="titulo-principal">Projetos Sociais</h1>
     <section class="grid">
-      <!-- Exemplo de cards -->
+      <!-- Card de Projeto Educação Viva -->
       <div class="card">
-        <img src="images/projeto-banner.jpg" alt="Projeto 1">
-        <h2>Projeto 1</h2>
-        <span class="badge categoria1">Web</span>
-        <p>Descrição resumida do projeto...</p>
+        <img src="../imagens/banner-hero.jpg" alt="Projeto Educação Viva" class="card-img">
+        <h2>Educação Viva</h2>
+        <span class="badge categoria1">Educação</span>
+        <p>Oficinas e cursos para crianças em situação de vulnerabilidade.</p>
         <button class="btn">Ver mais</button>
       </div>
-      <!-- Mais cards aqui -->
+      <!-- Card de Voluntariado -->
+      <div class="card">
+        <img src="../imagens/volu.svg" alt="Voluntariado" class="card-img">
+        <h2>Voluntariado</h2>
+        <span class="badge categoria2">Apoio</span>
+        <p>Faça parte do nosso time. Seja voluntário e ajude a transformar vidas!</p>
+        <button class="btn">Inscreva-se</button>
+      </div>
+      <!-- Card com logo principal -->
+      <div class="card">
+        <img src="../imagens/image.jpg" alt="Logo Crianças" class="card-img">
+        <h2>Nossa Identidade</h2>
+        <span class="badge categoria3">ONG</span>
+        <p>Conheça nossa missão e valores na transformação social.</p>
+        <button class="btn">Sobre</button>
+      </div>
     </section>
-    <!-- Exemplo de formulário -->
+
     <form class="formulario">
+      <h3>Contato Rápido</h3>
       <label for="nome">Nome:</label>
-      <input id="nome" name="nome" type="text" required>
+      <input id="nome" name="nome" type="text" required placeholder="Digite seu nome">
       <button class="btn" type="submit">Enviar</button>
     </form>
-    <!-- Feedback exemplo -->
-    <div class="alert success">Formulário enviado com sucesso!</div>
+    <div class="alert success" role="status">Formulário enviado com sucesso!</div>
   </main>
   <footer>
-    <p>&copy; 2025 Meu Projeto ADS</p>
+    <p>&copy; 2025 Crianças do Amanhã</p>
   </footer>
 </body>
 </html>
