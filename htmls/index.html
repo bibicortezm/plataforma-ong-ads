@@ -3,65 +3,206 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Crianças do Amanhã</title>
-  <link rel="stylesheet" href="../css/styles.css">
-  <link rel="icon" type="image/png" href="../imagens/favicon.png">
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+  <title>Crianças do Amanhã - Plataforma ONG</title>
+  <link rel="stylesheet" href="../css/style.min.css">
 </head>
 <body>
-  <header class="header">
-    <!-- Logo principal -->
-    <img src="../imagens/image.jpg" alt="Logo Crianças do Amanhã" class="logo-img">
-    <!-- Banner hero principal -->
-    <img src="../imagens/banner-hero.jpg" alt="Banner Crianças do Amanhã" class="banner-img">
-    <nav class="navbar">
-      <div class="logo"><img src="../imagens/ong.svg" alt="Logo ONG" class="logo-svg"> Crianças do Amanhã</div>
-      <ul class="menu">
-        <li><a href="index.html">Início</a></li>
-        <li><a href="projetos.html">Projetos</a></li>
-        <li><a href="cadastro.html">Cadastro</a></li>
+  <!-- NAVBAR -->
+  <nav class="navbar" role="navigation" aria-label="Navegação principal">
+    <div class="nav-container">
+      <div class="nav-logo">
+        <img src="../imagens/ong.png" alt="Logo Crianças do Amanhã" class="logo-img">
+        <span class="logo-text">Crianças do Amanhã</span>
+      </div>
+      <ul class="nav-menu" id="navMenu">
+        <li class="nav-item"><a href="#inicio" class="nav-link" onclick="navigateTo('inicio')">Início</a></li>
+        <li class="nav-item"><a href="#projetos" class="nav-link" onclick="navigateTo('projetos')">Projetos</a></li>
+        <li class="nav-item"><a href="#cadastro" class="nav-link" onclick="navigateTo('cadastro')">Cadastro</a></li>
       </ul>
-    </nav>
-  </header>
-  <main class="main-content">
-    <h1 class="titulo-principal">Projetos Sociais</h1>
-    <section class="grid">
-      <!-- Card de Projeto Educação Viva -->
-      <div class="card">
-        <img src="../imagens/banner-hero.jpg" alt="Projeto Educação Viva" class="card-img">
-        <h2>Educação Viva</h2>
-        <span class="badge categoria1">Educação</span>
-        <p>Oficinas e cursos para crianças em situação de vulnerabilidade.</p>
-        <button class="btn">Ver mais</button>
+      <div class="nav-controls">
+        <button class="theme-toggle" id="themeToggle" aria-label="Alternar tema escuro/claro" title="Alternar tema">🌙</button>
+        <button class="contrast-toggle" id="contrastToggle" aria-label="Alternar alto contraste" title="Alto contraste">⚫</button>
       </div>
-      <!-- Card de Voluntariado -->
-      <div class="card">
-        <img src="../imagens/volu.svg" alt="Voluntariado" class="card-img">
-        <h2>Voluntariado</h2>
-        <span class="badge categoria2">Apoio</span>
-        <p>Faça parte do nosso time. Seja voluntário e ajude a transformar vidas!</p>
-        <button class="btn">Inscreva-se</button>
+    </div>
+  </nav>
+
+  <!-- MAIN CONTENT -->
+  <main class="container">
+    
+    <!-- PÁGINA INÍCIO -->
+    <section id="inicio" class="page active" role="main">
+      <div class="hero-section">
+        <img src="../imagens/banner-hero.jpg" alt="Banner Crianças do Amanhã com arco-íris e sol sorridente" class="hero-image">
       </div>
-      <!-- Card com logo principal -->
-      <div class="card">
-        <img src="../imagens/image.jpg" alt="Logo Crianças" class="card-img">
-        <h2>Nossa Identidade</h2>
-        <span class="badge categoria3">ONG</span>
-        <p>Conheça nossa missão e valores na transformação social.</p>
-        <button class="btn">Sobre</button>
+
+      <section class="projects-section" aria-labelledby="projects-heading">
+        <h1 id="projects-heading">Projetos Sociais</h1>
+        <div class="cards-container">
+          <!-- CARD 1 -->
+          <div class="card" tabindex="0">
+            <img src="../imagens/educacao.jpg1.png" alt="Projeto Educação Viva - Crianças estudando" class="card-img">
+            <h2>Educação Viva</h2>
+            <p>Programa de educação complementar para crianças em situação de vulnerabilidade.</p>
+            <button class="btn-card" aria-label="Saiba mais sobre Educação Viva">Saiba Mais</button>
+          </div>
+
+          <!-- CARD 2 -->
+          <div class="card" tabindex="0">
+            <img src="../imagens/voluntariado.png" alt="Projeto Voluntariado - Pessoas trabalhando juntas" class="card-img">
+            <h2>Voluntariado</h2>
+            <p>Junte-se a nós! Venha fazer parte de nossa equipe de voluntários dedicados.</p>
+            <button class="btn-card" aria-label="Saiba mais sobre Voluntariado">Saiba Mais</button>
+          </div>
+
+          <!-- CARD 3 -->
+          <div class="card" tabindex="0">
+            <img src="../imagens/ong.png" alt="Nossa Identidade - Missão e valores da organização" class="card-img">
+            <h2>Nossa Identidade</h2>
+            <p>Conheça nossa missão, visão e valores que nos guiam.</p>
+            <button class="btn-card" aria-label="Saiba mais sobre Nossa Identidade">Saiba Mais</button>
+          </div>
+        </div>
+      </section>
+    </section>
+
+    <!-- PÁGINA PROJETOS -->
+    <section id="projetos" class="page" role="main">
+      <h1>Nossos Projetos</h1>
+      <div class="projects-list">
+        <article class="project-item">
+          <h2>Educação para Todos</h2>
+          <p>Proporcionando educação de qualidade a crianças em comunidades carentes.</p>
+        </article>
+        <article class="project-item">
+          <h2>Saúde e Bem-estar</h2>
+          <p>Programas de saúde preventiva e acompanhamento médico.</p>
+        </article>
+        <article class="project-item">
+          <h2>Esporte e Cultura</h2>
+          <p>Atividades de esporte, arte e cultura para desenvolvimento integral.</p>
+        </article>
       </div>
     </section>
 
-    <form class="formulario">
-      <h3>Contato Rápido</h3>
-      <label for="nome">Nome:</label>
-      <input id="nome" name="nome" type="text" required placeholder="Digite seu nome">
-      <button class="btn" type="submit">Enviar</button>
-    </form>
-    <div class="alert success" role="status">Formulário enviado com sucesso!</div>
+    <!-- PÁGINA CADASTRO -->
+    <section id="cadastro" class="page" role="main">
+      <h1>Cadastro de Voluntários e Doadores</h1>
+      <form id="form" class="form-container" novalidate>
+        <fieldset>
+          <legend>Dados Pessoais</legend>
+          
+          <div class="form-group">
+            <label for="name">Nome Completo *</label>
+            <input 
+              type="text" 
+              id="name" 
+              name="name" 
+              placeholder="Digite seu nome completo"
+              required
+              aria-required="true"
+              aria-describedby="name-error"
+            >
+            <span id="name-error" class="error-message" role="alert"></span>
+          </div>
+
+          <div class="form-group">
+            <label for="email">Email *</label>
+            <input 
+              type="email" 
+              id="email" 
+              name="email" 
+              placeholder="Digite seu email"
+              required
+              aria-required="true"
+              aria-describedby="email-error"
+            >
+            <span id="email-error" class="error-message" role="alert"></span>
+          </div>
+
+          <div class="form-group">
+            <label for="phone">Telefone *</label>
+            <input 
+              type="tel" 
+              id="phone" 
+              name="phone" 
+              placeholder="(11) 99999-9999"
+              required
+              aria-required="true"
+              aria-describedby="phone-error"
+            >
+            <span id="phone-error" class="error-message" role="alert"></span>
+          </div>
+
+          <div class="form-group">
+            <label for="type">Tipo de Contribuição *</label>
+            <select 
+              id="type" 
+              name="type" 
+              required
+              aria-required="true"
+              aria-describedby="type-error"
+            >
+              <option value="">Selecione uma opção</option>
+              <option value="voluntario">Voluntário</option>
+              <option value="doador">Doador</option>
+              <option value="ambos">Ambos</option>
+            </select>
+            <span id="type-error" class="error-message" role="alert"></span>
+          </div>
+
+          <div class="form-group">
+            <label for="message">Mensagem</label>
+            <textarea 
+              id="message" 
+              name="message" 
+              placeholder="Conte-nos sobre você..."
+              rows="5"
+              aria-describedby="message-info"
+            ></textarea>
+            <span id="message-info" class="info-message">Máximo 500 caracteres</span>
+          </div>
+
+          <div class="form-group checkbox-group">
+            <label for="terms">
+              <input 
+                type="checkbox" 
+                id="terms" 
+                name="terms" 
+                required
+                aria-required="true"
+              >
+              Concordo com os termos de privacidade *
+            </label>
+            <span id="terms-error" class="error-message" role="alert"></span>
+          </div>
+        </fieldset>
+
+        <div class="form-buttons">
+          <button type="submit" class="btn-submit">Enviar</button>
+          <button type="reset" class="btn-reset">Limpar</button>
+        </div>
+      </form>
+    </section>
   </main>
-  <footer>
-    <p>&copy; 2025 Crianças do Amanhã</p>
+
+  <!-- FOOTER -->
+  <footer class="footer" role="contentinfo">
+    <div class="footer-content">
+      <p>&copy; 2025 Crianças do Amanhã. Todos os direitos reservados.</p>
+      <p>Desenvolvido com ❤️ para fazer diferença</p>
+    </div>
   </footer>
+
+  <!-- SCRIPTS -->
+  <script src="../js/script.min.js"></script>
 </body>
 </html>
+
+
+
+
+
+
+
+
+

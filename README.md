@@ -48,23 +48,13 @@ Sistema com cadastro para voluntários/doadores, listagem de projetos, design mo
 ## Instalação/Execução
 
 1. Clone o repositório:
-2. 2. Instale e inicie localmente:
+2. Instale e inicie localmente:
 - Front-end: HTML/CSS/JS: abra com LiveServer, VS Code, ou:
   ```
-  python -m http.server
+- python -m http.server
   ```
 - Backend (se houver): siga instruções específicas
-3. Acesse pelo navegador:
-
----
-
-## Estrutura do Projeto
-
-- `/css` - Estilos
-- `/js` - Scripts
-- `/htmls` - Páginas
-- `/imagens` - Banner, prints, ícones SVG e favicon
-
+3. Acesse pelo navegador
 ---
 
 ## Acessibilidade
@@ -91,7 +81,13 @@ Sistema com cadastro para voluntários/doadores, listagem de projetos, design mo
 GitHub: [@bibicortezm](https://github.com/bibicortezm)  
 Email: bi_cortez@hotmail.com
 
----
+## 🚀 Como Executar Localmente
+
+1. **Clone o repositório**:
+2. **Abra no navegador**:
+- Opção 1: Abra `index.html` diretamente
+- Opção 2: Use um servidor local
+-  3. **Acesse**: `http://localhost:8000`
 
 ## Licença
 
@@ -99,15 +95,5 @@ MIT
 
 ---
 
-## Contribuindo
+**Última atualização**: 15/11/2025
 
-- Faça um fork
-- Crie branch feature
-- Envie PR
-- Siga padrão de commits e participe das Issues
-
----
-
-## Suporte
-
-Sugestões ou dúvidas: abra uma [Issue](https://github.com/bibicortezm/plataforma-ong-ads/issues) ou envie por e-mail.
