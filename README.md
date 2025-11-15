@@ -35,7 +35,7 @@ A plataforma "Crianças do Amanhã" oferece:
 ### Página de Cadastro
 ![Cadastro de Voluntários e Doadores](imagens/captura-cadastro.png)
 
-### Home com modo claro (opcional)
+### Home com modo claro 
 ![Home - Modo Claro](imagens/captura-home-claro.png)
 
 ## 🛠️ Tecnologias Utilizadas
