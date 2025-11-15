@@ -26,6 +26,179 @@
     </div>
   </nav>
 
+  <!-- MAIN CONTENT -->
+  <main class="container">
+    
+    <!-- PÁGINA INÍCIO -->
+    <section id="inicio" class="page active" role="main">
+      <div class="hero-section">
+        <img src="../imagens/banner-hero.jpg" alt="Banner Crianças do Amanhã com arco-íris e sol sorridente" class="hero-image">
+      </div>
+
+      <section class="projects-section" aria-labelledby="projects-heading">
+        <h1 id="projects-heading">Projetos Sociais</h1>
+        <div class="cards-container">
+          <!-- CARD 1 -->
+          <div class="card" tabindex="0">
+            <img src="../imagens/educacao.jpg1.png" alt="Projeto Educação Viva - Crianças estudando" class="card-img">
+            <h2>Educação Viva</h2>
+            <p>Programa de educação complementar para crianças em situação de vulnerabilidade.</p>
+            <button class="btn-card" aria-label="Saiba mais sobre Educação Viva">Saiba Mais</button>
+          </div>
+
+          <!-- CARD 2 -->
+          <div class="card" tabindex="0">
+            <img src="../imagens/voluntariado.png" alt="Projeto Voluntariado - Pessoas trabalhando juntas" class="card-img">
+            <h2>Voluntariado</h2>
+            <p>Junte-se a nós! Venha fazer parte de nossa equipe de voluntários dedicados.</p>
+            <button class="btn-card" aria-label="Saiba mais sobre Voluntariado">Saiba Mais</button>
+          </div>
+
+          <!-- CARD 3 -->
+          <div class="card" tabindex="0">
+            <img src="../imagens/ong.png" alt="Nossa Identidade - Missão e valores da organização" class="card-img">
+            <h2>Nossa Identidade</h2>
+            <p>Conheça nossa missão, visão e valores que nos guiam.</p>
+            <button class="btn-card" aria-label="Saiba mais sobre Nossa Identidade">Saiba Mais</button>
+          </div>
+        </div>
+      </section>
+    </section>
+
+    <!-- PÁGINA PROJETOS -->
+    <section id="projetos" class="page" role="main">
+      <h1>Nossos Projetos</h1>
+      <div class="projects-list">
+        <article class="project-item">
+          <h2>Educação para Todos</h2>
+          <p>Proporcionando educação de qualidade a crianças em comunidades carentes.</p>
+        </article>
+        <article class="project-item">
+          <h2>Saúde e Bem-estar</h2>
+          <p>Programas de saúde preventiva e acompanhamento médico.</p>
+        </article>
+        <article class="project-item">
+          <h2>Esporte e Cultura</h2>
+          <p>Atividades de esporte, arte e cultura para desenvolvimento integral.</p>
+        </article>
+      </div>
+    </section>
+
+    <!-- PÁGINA CADASTRO -->
+    <section id="cadastro" class="page" role="main">
+      <h1>Cadastro de Voluntários e Doadores</h1>
+      <form id="form" class="form-container" novalidate>
+        <fieldset>
+          <legend>Dados Pessoais</legend>
+          
+          <div class="form-group">
+            <label for="name">Nome Completo *</label>
+            <input 
+              type="text" 
+              id="name" 
+              name="name" 
+              placeholder="Digite seu nome completo"
+              required
+              aria-required="true"
+              aria-describedby="name-error"
+            >
+            <span id="name-error" class="error-message" role="alert"></span>
+          </div>
+
+          <div class="form-group">
+            <label for="email">Email *</label>
+            <input 
+              type="email" 
+              id="email" 
+              name="email" 
+              placeholder="Digite seu email"
+              required
+              aria-required="true"
+              aria-describedby="email-error"
+            >
+            <span id="email-error" class="error-message" role="alert"></span>
+          </div>
+
+          <div class="form-group">
+            <label for="phone">Telefone *</label>
+            <input 
+              type="tel" 
+              id="phone" 
+              name="phone" 
+              placeholder="(11) 99999-9999"
+              required
+              aria-required="true"
+              aria-describedby="phone-error"
+            >
+            <span id="phone-error" class="error-message" role="alert"></span>
+          </div>
+
+          <div class="form-group">
+            <label for="type">Tipo de Contribuição *</label>
+            <select 
+              id="type" 
+              name="type" 
+              required
+              aria-required="true"
+              aria-describedby="type-error"
+            >
+              <option value="">Selecione uma opção</option>
+              <option value="voluntario">Voluntário</option>
+              <option value="doador">Doador</option>
+              <option value="ambos">Ambos</option>
+            </select>
+            <span id="type-error" class="error-message" role="alert"></span>
+          </div>
+
+          <div class="form-group">
+            <label for="message">Mensagem</label>
+            <textarea 
+              id="message" 
+              name="message" 
+              placeholder="Conte-nos sobre você..."
+              rows="5"
+              aria-describedby="message-info"
+            ></textarea>
+            <span id="message-info" class="info-message">Máximo 500 caracteres</span>
+          </div>
+
+          <div class="form-group checkbox-group">
+            <label for="terms">
+              <input 
+                type="checkbox" 
+                id="terms" 
+                name="terms" 
+                required
+                aria-required="true"
+              >
+              Concordo com os termos de privacidade *
+            </label>
+            <span id="terms-error" class="error-message" role="alert"></span>
+          </div>
+        </fieldset>
+
+        <div class="form-buttons">
+          <button type="submit" class="btn-submit">Enviar</button>
+          <button type="reset" class="btn-reset">Limpar</button>
+        </div>
+      </form>
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="footer" role="contentinfo">
+    <div class="footer-content">
+      <p>&copy; 2025 Crianças do Amanhã. Todos os direitos reservados.</p>
+      <p>Desenvolvido com ❤️ para fazer diferença</p>
+    </div>
+  </footer>
+
+  <!-- SCRIPTS -->
+  <script src="../js/script.min.js"></script>
+</body>
+</html>
+
+
 
 
 
