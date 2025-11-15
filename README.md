@@ -31,6 +31,10 @@ A plataforma "Crianças do Amanhã" oferece:
 - **Acessibilidade**: WCAG 2.1 Nível AA
 - **Otimização**: Minificação CSS/JS, compressão de imagens
 
+## 🚀 Deploy
+
+Acesse o projeto em produção: [Plataforma ONG ADS](https://bibicortezm.github.io/plataforma-ong-ads/)
+
 ## 🚀 Como Executar Localmente
 1. **Clone o repositório**:
 git clone https://github.com/bibicortezm/plataforma-ong-ads.git
