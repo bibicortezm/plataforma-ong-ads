@@ -45,7 +45,6 @@ A plataforma "Crianças do Amanhã" oferece:
 - **Versionamento**: Git/GitHub com GitFlow
 - **Acessibilidade**: WCAG 2.1 Nível AA
 - **Otimização**: Minificação CSS/JS, compressão de imagens
-- 3. **Acesse**: `http://localhost:8000`
 
 ## ♿ Acessibilidade
 
@@ -99,6 +98,16 @@ Acompanhe o progresso no [Projects](https://github.com/bibicortezm/plataforma-on
 
 Este projeto é de código aberto sob a licença MIT.
 
+## 🚀 Como Executar Localmente
+
+1. **Clone o repositório**:
+2. **Abra no navegador**:
+- Opção 1: Abra `index.html` diretamente
+- Opção 2: Use um servidor local
+-  3. **Acesse**: `http://localhost:8000`
+
+
+
 ## 🤝 Contribuindo
 
 Contribuições são bem-vindas! Por favor:
@@ -115,9 +124,3 @@ Para dúvidas ou sugestões, abra uma [Issue](https://github.com/bibicortezm/pla
 
 **Última atualização**: 15/11/2025
 
-## 🚀 Como Executar Localmente
-
-1. **Clone o repositório**:
-2. **Abra no navegador**:
-- Opção 1: Abra `index.html` diretamente
-- Opção 2: Use um servidor local
