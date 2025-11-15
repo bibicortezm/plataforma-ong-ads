@@ -3,6 +3,7 @@
 Projeto web responsivo para ONGs, desenvolvido no curso de ADS.  
 Sistema com cadastro para voluntários/doadores, listagem de projetos, design moderno e acessibilidade WCAG 2.1 AA.
 
+
 ![Banner Crianças do Amanhã](./imagens/banner-hero.jpg)
 
 
@@ -10,6 +11,7 @@ Sistema com cadastro para voluntários/doadores, listagem de projetos, design mo
 
 <img src="https://img.shields.io/badge/acessibilidade-WCAG%202.1%20AA-29a3ef?style=for-the-badge" alt="Acessibilidade WCAG">
 <img src="https://img.shields.io/badge/status-em%20desenvolvimento-yellow.svg?style=for-the-badge" alt="Status: Em Desenvolvimento">
+
 
 
 ## Demonstração Visual
@@ -40,21 +42,15 @@ Sistema com cadastro para voluntários/doadores, listagem de projetos, design mo
 - - Mensagens de feedback (alertas, erros, sucesso)
 - Prints/gifs do funcionamento para auditoria
 
+
 ## Instalação/Execução
 
 1. Clone o repositório:
-2. 2. Instale e inicie localmente:
+2. Instale e inicie localmente:
 - Front-end: HTML/CSS/JS: abra com LiveServer, VS Code, ou:
-  python -m http.server
+- python -m http.server
 - Backend (se houver): siga instruções específicas
 3. Acesse pelo navegador
-
-## Estrutura do Projeto
-
-- `/css` - Estilos
-- `/js` - Scripts
-- `/htmls` - Páginas
-- `/imagens` - Banner, prints, ícones SVG e favicon
 
 ## Acessibilidade
 
@@ -63,6 +59,8 @@ Sistema com cadastro para voluntários/doadores, listagem de projetos, design mo
 - Testado via Lighthouse, prints incluídos
 - ARIA implementado em menus/campos/chamadas de status
 
+
+
 ## Issues/Milestones/Releases
 
 - Progresso em [Projects](https://github.com/bibicortezm/plataforma-ong-ads/projects)
@@ -70,25 +68,24 @@ Sistema com cadastro para voluntários/doadores, listagem de projetos, design mo
 - Veja metas em [Milestones](https://github.com/bibicortezm/plataforma-ong-ads/milestones)
 - Acompanhe releases em [Releases](https://github.com/bibicortezm/plataforma-ong-ads/releases)
 
+
+
 ## Autor
 
 **Bianca Cortez Martinez**  
 GitHub: [@bibicortezm](https://github.com/bibicortezm)  
 Email: bi_cortez@hotmail.com
 
+## 🚀 Como Executar Localmente
+
+1. **Clone o repositório**:
+2. **Abra no navegador**:
+- Opção 1: Abra `index.html` diretamente
+- Opção 2: Use um servidor local
+-  3. **Acesse**: `http://localhost:8000`
+
 ## Licença
 
 MIT
 
-
-## Contribuindo
-
-- Faça um fork
-- Crie branch feature
-- Envie PR
-- Siga padrão de commits e participe das Issues
-
-
-## Suporte
-
-Sugestões ou dúvidas: abra uma [Issue](https://github.com/bibicortezm/plataforma-ong-ads/issues) ou envie por e-mail.
+**Última atualização**: 15/11/2025
